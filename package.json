@@ -1,0 +1,16 @@
+{
+  "name": "express-and-react",
+  "version": "1.0.0",
+  "scripts": {
+    "body-parser": "^1.18.3",
+    "client": "cd react_client && npm start",
+    "server": "nodemon server.js",
+    "dev":
+      "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "concurrently": "^3.5.0",
+  "sqlite3": "^4.0.2"
+}
